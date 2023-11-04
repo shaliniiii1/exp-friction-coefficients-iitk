@@ -6,7 +6,9 @@ var svg=document.getElementById("Layer_1");
 var pipeSelectionText = document.getElementById("pipeSelectionText");
 var manometerText = document.getElementById("manometer-text")
 var count=0
+let powerFlag=true;
 
+// export { powerFlag };
 var w2 = document.getElementById("Water_3")
 var w3 = document.getElementById("Water_4")
 var W2 = document.getElementById("Water_3_00000139995959920278110170000008624891076724554114_")
@@ -40,7 +42,9 @@ var arrowRect = document.getElementById("arrow-rect")
 var arrowPol = document.getElementById("arrow-pol")
 var timerSec = document.getElementById("timer-sec")
 var timerMS = document.getElementById("timer-ms")
-// power Button
+
+window.appData = window.appData || {};
+window.appData.powerFlag = false;
 
 function power(){
     if(count==0){
@@ -49,17 +53,18 @@ function power(){
         enableButton.textContent = "POWER OFF"
         count=1
 
-        // toggle arrow
         waterFlow3()
     }else{
-        enableButton.style.backgroundColor = "#ca2222"
-        document.getElementById("steps").innerHTML = "Step1: Turn Power On"
-        enableButton.textContent = "POWER ON"
-        count = 0
+        if(!window.appData.powerFlag){
+            alert("Please complete the experiment to turn power off!");
+            count=1
+        }else{
+            location.reload()
+        }
     }
 }
 
-
+// export { count };
 function waterFlow3(){
     w2.setAttribute("opacity", "1")
 
