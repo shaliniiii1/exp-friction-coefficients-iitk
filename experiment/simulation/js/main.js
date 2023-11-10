@@ -469,6 +469,9 @@ function fillTankFront(){
     setTimeout(function() {
         document.getElementById("steps").innerHTML = "Take note of the current time on the timer, and select another pipe number for further readings."
         pipeSelection.disabled=false
+        if(pipeSelection.value==2){
+            document.getElementById("steps").innerHTML = "Take note of the current time on the timer."
+        }
       }, 2500);
 
 }   
