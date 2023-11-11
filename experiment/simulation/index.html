@@ -853,8 +853,49 @@
 													</mrow>
 												</mfrac>
 											</math>
+											<!-- new formula -->
+											<p style="text-align: center; font-size: 20px; font-weight: bolder;">
+												Laminar Flow:&nbsp;&nbsp;<math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+												  <msub>
+													<mi>f</mi>
+													<mrow class="MJX-TeXAtom-ORD">
+													  <mi>Theo</mi
+													</mrow>
+												  </msub>
+												  <mo>=</mo>
+												  <mfrac>
+													<mn>64</mn>
+													<mi>Re</mi>
+												  </mfrac>
+												</math>&nbsp;&nbsp; (Re &lt; 3000)
+											  </p>
+											  
+											  <p style="text-align: center; font-size: 20px; font-weight: bolder;">
+												Turbulent Flow (Blasius Equation):&nbsp;&nbsp; <math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+												  ><msub>
+													<mi>f</mi>
+													<mrow class="MJX-TeXAtom-ORD">
+													  <mi>Theo</mi>
+													</mrow>
+												  </msub>
+												  <mo>=</mo>
+												  <mn>0.316</mn>
+												  <mo>&#8290;</mo> <!-- This is a thin space for better formatting -->
+												  <mi>Re</mi>
+												  <msup>
+													<mo>&#8290;</mo> <!-- This is a thin space for better formatting -->
+													<sup><mo>-</mo>
+													<mn>0.25</mn></sup>
+												  </msup>
+												</math>&nbsp;&nbsp; (3000 &lt; Re &lt; 10<sup>5</sup>)
+											  </p>
+											  
 										
-										
+
+										 
+										  
+										  
+										  
 		
 									</div> 
 									<div class="item5" style="padding: 0%;">
@@ -862,7 +903,7 @@
 										
 										<p style="text-align: center; line-height: 35px; font-size: 100%;  font-weight: bolder; margin: 0px; padding: 5%;">
 											
-												Area of the tank(A) = 0.12 m<sup>2</sup> <br>
+												Area of the tank(A) = 0.077 m<sup>2</sup> <br>
 												Length of Pipe(L) = 1m<br>
 												Inlet diameter of pipe 1 in meters(D<sub>1</sub>) = 0.016 m <br>
 												Inlet diameter of pipe 2 in meters (D<sub>2</sub>) = 0.022 m <br>
@@ -875,7 +916,7 @@
 									</div>
 								</div>
 
-								<table id="tab1" border="1" width="50%" >
+								<!-- <table id="tab1" border="1" width="50%" >
 									<tr>
 										<th colspan="13" style="font-size: 25px; font-weight: bolder; background-color: #634380;color: white;">Observation Table</th>
 									</tr>
@@ -893,7 +934,7 @@
 												</th>
 											<th>Velocity <br> V 
 												(m<sup></sup>/s)
-												<!-- (m<sup>/s) -->
+												(m<sup>/s)
 												</th>
 												<th>Co-efficient of friction <br> f </th>
 											
@@ -923,8 +964,8 @@
 										<td id="t13"><input type="number"></td>
 										<td id="t14"><input type="number" disabled="true"></td>
 									</tr>
-								</table>
-
+								</table> -->
+<!-- 
 								<table id="tab1" class="result-table"  border="1" style="display: none;" >
 									<tr>
 										<th colspan="13" style="font-size: 25px; font-weight: bolder; background-color: #634380;color: white;">Observation Table</th>
@@ -943,7 +984,7 @@
 												</th>
 											<th>Velocity <br> V 
 												(m<sup></sup>/s)
-												<!-- (m<sup>/s) -->
+												(m<sup>/s)
 												</th>
 												<th>Co-efficient of friction <br> f </th>
 											
@@ -973,7 +1014,93 @@
 										<td id="t13"><input type="number" disabled="true" value="1.557"></td>
 										<td id="t14"><input type="number" disabled="true" value="0.004"></td>
 									</tr>
-								</table>
+								</table> -->
+								
+								<table id="tab1" class="result-table"  border="1" style="display: none;" >
+									<tr>
+										<th colspan="13" style="font-size: 25px; font-weight: bolder; background-color: #634380;color: white;">Observation Table</th>
+									</tr>
+									<tr>
+									  <th>S.No:</th>
+									  <th>Diameter of pipe <br> D (m)</th>
+									  <th>Area of Pipe <br> a (m<sup>2</sup>)</th>
+									  <th>Manometer reading <br> in m of Hg <br>( h<sub>f</sub> )</th>
+									  <th>Time taken for collecting <br> 5 cm rise of water <br> in collecting tank <br>(sec)</th>
+									  <th>Discharge <br> Q x 10<sup>-4</sup> (m<sup>3</sup>/s)</th>
+									  <th>Velocity <br> V (m/s)</th>
+									  <th>Co-efficient of friction <br> f</th>
+									  <th>Re</th>
+									  <th>f<sub>Theo</sub></th>
+									</tr>
+									<tr>
+									  <td>1.</td>
+									  <td id="t1"><input type="number" disabled="true" value="0.016"></td>
+									  <td id="t2"><input type="number" disabled="true" value="0.000380182"></td>
+									  <td id="t3"><input type="number" disabled="true" value="10.05"></td>
+									  <td id="t4"><input type="number" disabled="true" value="3.83"></td>
+									  <td id="t5"><input type="number" disabled="true" value="1.008"></td>
+									  <td id="t6"><input type="number" disabled="true" value="0.0289"></td>
+									  <td id="t7"><input type="number" disabled="true" value="0.0289"></td>
+									  <td id="t8"><input type="number" disabled="true" value="0.0289"></td>
+									  <td id="t9"><input type="number" disabled="true" value="0.0289"></td>
+									</tr>
+									<tr>
+									  <td>2.</td>
+									  <td id="t10"><input type="number" disabled="true" value="0.022"></td>
+									  <td id="t11"><input type="number" disabled="true" value="0.000201088"></td>
+									  <td id="t12"><input type="number" disabled="true" value="0.0303"></td>
+									  <td id="t13"><input type="number" disabled="true" value="12.3"></td>
+									  <td id="t14"><input type="number" disabled="true" value="3.13"></td>
+									  <td id="t15"><input type="number" disabled="true" value="1.557"></td>
+									  <td id="t16"><input type="number" disabled="true" value="0.004"></td>
+									  <td id="t17"><input type="number" disabled="true" value="0.004"></td>
+									  <td id="t18"><input type="number" disabled="true" value="0.004"></td>
+									</tr>
+								  </table>
+								  
+								  
+								<table id="tab1" border="1" width="50%">
+									<tr>
+									  <th colspan="15" style="font-size: 25px; font-weight: bolder; background-color: #634380;color: white;">Observation Table</th>
+									</tr>
+									<tr>
+									  <th>S.No:</th>
+									  <th>Diameter of pipe <br> D (m)</th>
+									  <th>Area of Pipe <br> a (m<sup>2</sup>)</th>
+									  <th>Manometer reading <br> in m of Hg <br>( h<sub>f</sub> )</th>
+									  <th>Time taken for collecting <br> 5 cm rise of  water<br>in collecting tank <br>(sec)</th>
+									  <th>Discharge <br>Q x 10<sup>-4</sup> (m<sup>3</sup>/s)</th>
+									  <th>Velocity <br> V (m/s)</th>
+									  <th>Co-efficient of friction <br> f</th>
+									  <th>Re</th>
+									  <th>f<sub>Theo</sub></th>
+									</tr>
+									<tr>
+									  <td>1.</td>
+									  <td id="t1"><input type="number" disabled="true" value="0.022"></td>
+									  <td id="t2"><input type="number"></td>
+									  <td id="t3"><input type="number"></td>
+									  <td id="t4"><input type="number"></td>
+									  <td id="t5"><input type="number"></td>
+									  <td id="t6"><input type="number"></td>
+									  <td id="t7"><input type="number" disabled="true"></td>
+									  <td id="t15"><input type="number"></td>
+									  <td id="t16"><input type="number"></td>
+									</tr>
+									<tr>
+									  <td>2.</td>
+									  <td id="t8"><input type="number" disabled="true" value="0.016"></td>
+									  <td id="t9"><input type="number"></td>
+									  <td id="t10"><input type="number"></td>
+									  <td id="t11"><input type="number"></td>
+									  <td id="t12"><input type="number"></td>
+									  <td id="t13"><input type="number"></td>
+									  <td id="t14"><input type="number" disabled="true"></td>
+									  <td id="t17"><input type="number"></td>
+									  <td id="t18"><input type="number"></td>
+									</tr>
+								  </table>
+								  
 
 								<button type="button" class="checkYourResult" style="border: solid black 3px; border-radius: 5px; padding: 5px;" onclick="calculate()" >Calculate</button>
 
